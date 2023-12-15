@@ -30,7 +30,9 @@ const addDiv = (item) => {
 
 const getItem = () => {
     const item = document.getElementById('input').value
-    addDiv(item)
+    if(item != ''){
+        addDiv(item)
+    }
     document.getElementById('input').value = '';
 }
 
