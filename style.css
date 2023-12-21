@@ -1,7 +1,10 @@
-body {
+html , body {
     background-color: #22092C;
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
     
 }
 
@@ -18,7 +21,8 @@ body {
 .centre {
     height: 100%;
     width: 100%;
-    
+    padding: 0;
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -108,5 +112,12 @@ body {
 .del:hover {
     cursor: pointer;
     color: #872341;
+}
+
+@media (max-width: 600px){
+    .external {
+        height: 100%;
+        width: 100%;
+    }
 }
 
